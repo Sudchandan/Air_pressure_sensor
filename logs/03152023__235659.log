@@ -1,0 +1,18 @@
+[ 2023-03-15 23:57:15,550 ] 16 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-15 23:57:16,494 ] 23 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-03-15 23:57:16,495 ] 17 root - INFO - Reading data from database: air_pressure_system and collection: Sensor
+[ 2023-03-15 23:57:20,453 ] 19 root - INFO - Found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2023-03-15 23:57:20,454 ] 21 root - INFO - Dropping column: _id 
+[ 2023-03-15 23:57:20,679 ] 23 root - INFO - Row and columns in df: (36188, 171)
+[ 2023-03-15 23:57:20,679 ] 29 root - INFO - Save data in feature store
+[ 2023-03-15 23:57:21,306 ] 35 root - INFO - Create feature store folder if not available
+[ 2023-03-15 23:57:21,306 ] 39 root - INFO - Save df to feature store folder
+[ 2023-03-15 23:57:24,814 ] 44 root - INFO - split dataset into train and test set
+[ 2023-03-15 23:57:25,595 ] 48 root - INFO - create dataset directory folder if not available
+[ 2023-03-15 23:57:25,595 ] 53 root - INFO - Save df to feature store folder
+[ 2023-03-15 23:57:27,852 ] 65 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03152023__235711/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/03152023__235711/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03152023__235711/data_ingestion/dataset/test.csv')

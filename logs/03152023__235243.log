@@ -1,0 +1,22 @@
+[ 2023-03-15 23:54:56,933 ] 16 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-15 23:55:00,228 ] 23 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-03-15 23:55:00,229 ] 17 root - INFO - Reading data from database: air_pressure_system and collection: Sensor
+[ 2023-03-15 23:55:04,108 ] 19 root - INFO - Found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2023-03-15 23:55:04,108 ] 21 root - INFO - Dropping column: _id 
+[ 2023-03-15 23:55:04,306 ] 23 root - INFO - Row and columns in df: (36188, 171)
+[ 2023-03-15 23:55:04,306 ] 29 root - INFO - Save data in feature store
+[ 2023-03-15 23:55:04,967 ] 35 root - INFO - Create feature store folder if not available
+[ 2023-03-15 23:55:04,968 ] 39 root - INFO - Save df to feature store folder
+[ 2023-03-15 23:55:08,336 ] 44 root - INFO - split dataset into train and test set
+[ 2023-03-15 23:55:08,946 ] 48 root - INFO - create dataset directory folder if not available
+[ 2023-03-15 23:55:08,947 ] 53 root - INFO - Save df to feature store folder
+[ 2023-03-15 23:55:11,207 ] 65 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03152023__235453/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/03152023__235453/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03152023__235453/data_ingestion/dataset/test.csv')
+[ 2023-03-15 23:55:52,848 ] 17 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-03-15 23:55:56,392 ] 107 root - INFO - Reading base dataframe
+[ 2023-03-15 23:55:59,544 ] 110 root - INFO - Replace na value in base df
+[ 2023-03-15 23:55:59,544 ] 112 root - INFO - Drop null values colums from base df
